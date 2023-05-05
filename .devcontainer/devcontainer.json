@@ -1,0 +1,14 @@
+{
+  "name": "Zephyr App Development",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--security-opt", "label=disable"],
+  "containerEnv": {
+    "WORKSPACE_DIR": "${containerWorkspaceFolder}",
+    "PROMPT_COMMAND": "history -a"
+  },
+  "extensions": ["ms-vscode.cpptools"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [3000]
+}

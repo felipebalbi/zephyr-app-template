@@ -1,0 +1,24 @@
+/**
+ * @file app.h
+ *
+ * App details
+ *
+ * Copyright (c) 2023 Felipe Balbi
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#ifndef APP_H_
+#define APP_H_
+
+#define APP_VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
+#define APP_VERSION_MINOR ${PROJECT_VERSION_MINOR}
+#define APP_VERSION_PATCH ${PROJECT_VERSION_PATCH}
+
+#define APP_VERSION \
+	((APP_VERSION_MAJOR << 16) + \
+	 (APP_VERSION_MINOR << 8) + \
+	  APP_VERSION_PATCH)
+
+#define APP_VERSION_STR "${PROJECT_VERSION}"
+
+#endif /* APP_H_ */
