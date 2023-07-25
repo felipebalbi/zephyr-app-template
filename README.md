@@ -21,3 +21,10 @@ Finally, build the application:
 ```sh
 $ west build -b qemu_cortex_m3
 ```
+
+When building with rust support, the target must be passed in
+manually, like so:
+
+```sh
+$ west build -b qemu_cortex_m3 -- -DRust_CARGO_TARGET=thumbv7m-none-eabi
+```
